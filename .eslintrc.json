@@ -1,0 +1,20 @@
+{
+  "root": true, // this is the root eslint file for this project. Don't look in parent folders for any config files
+  "extends": [
+    "eslint:recommended", // eslint's recommended rules
+    "plugin:import/errors", // enhanced import errors
+    "plugin:import/warnings"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 7, // ES2016
+    "sourceType": "module" // standard JS modules
+  },
+  "env": { // what we are expecting
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": { // for overriding rules
+    "no-console": 1 // 0=Off, 1=Warning, 2=Error
+  }
+}
